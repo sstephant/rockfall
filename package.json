@@ -1,0 +1,38 @@
+{
+  "name": "promise-rockfall",
+  "version": "1.0.0",
+  "description": "Batchify promises resoltion e.g. something in between Promise.all and promise-waterfall",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sstephant/rockfall.git"
+  },
+  "keywords": [
+    "promise",
+    "batch"
+  ],
+  "author": "Sylvain STEPHANT <sstephant+github@gmail.com> (https://fr.linkedin.com/in/sstephant)",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/sstephant/rockfall/issues"
+  },
+  "homepage": "https://github.com/sstephant/rockfall#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-standard": "^2.0.1"
+  },
+  "dependencies": {
+    "promise-waterfall": "^0.1.0"
+  }
+}
