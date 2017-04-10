@@ -21,8 +21,8 @@ const rockfall = (promiseFactories = [], batchSize = 1) => {
   if (isNaN(size) || size <= 1) {
     return waterfall(promiseFactories);
   }
-  if (size === promiseFactories.length) {
-    return batch(promiseFactories);
+  if (size >= promiseFactories.length) {
+    return batch(promiseFactories)();
   }
   const batches = [];
   let currentBatch = [];
@@ -41,3 +41,4 @@ const rockfall = (promiseFactories = [], batchSize = 1) => {
  *
  */
 module.exports = rockfall;
+module.exports.batch = batch;
