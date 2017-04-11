@@ -4,6 +4,7 @@ const debug = require('debug');
 const trace = debug('rockfall');
 
 const identity = rs => (Promise.resolve(rs));
+// TODO: Add timings ?
 const tracer = (n, then) => (rs) => {
   trace(`batch ${n} is resolved`);
   return then(rs);
