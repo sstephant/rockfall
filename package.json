@@ -1,6 +1,6 @@
 {
   "name": "promise-rockfall",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Batchify promises resoltion e.g. something in between Promise.all and promise-waterfall",
   "main": "src/index.js",
   "scripts": {
