@@ -5,7 +5,9 @@
 
 ## installation
 
+```bash
 npm i -S promise-rockfall
+```
 
 ## usage
 
