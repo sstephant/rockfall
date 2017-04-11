@@ -19,6 +19,6 @@ const promises = Array(100).fill(null).map(() => (Promise.resolve(Math.random())
 rockfall(promises, 10);
 // It is possible do something when each batch is resolved
 rockfall(promises, 10, (rs) => {console.log(rs);});
-// It is possible to d something when everything is resovled
+// It is possible to do something when everything is resovled
 rockfall(promises, 10).then(() => {console.log('all done');});
 ```
