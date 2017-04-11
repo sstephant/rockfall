@@ -14,7 +14,7 @@ npm i -S promise-rockfall
 ```javascript
 const rockfall = require('promise-rockfall');
 // Array of promises
-const promises = Array(100).fill(null).map(() => (Promise.resolve(Math.random()));
+const promises = Array(100).fill(null).map(() => (Promise.resolve(Math.random())));
 // Process promises in several batches of 10 promises at max.
 rockfall(promises, 10);
 // It is possible do something when each batch is resolved
